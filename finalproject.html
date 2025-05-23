@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugar & Whisk 🧁</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+      h1 {
+        text-align: center;
+        color: #e5a1ab;
+        text-decoration: underline;
+        font-weight: 900;
+        margin: 30px;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: lighter;
+        color: #e2a9b2;
+        margin: 30px;
+      }
+
+      p {
+        border: 3px solid #e5a1ab;
+        padding: 20px;
+        color: #e5a1ab;
+        border-radius: 10px;
+        font-size: 20px;
+        margin: 30px;
+        line-height: 1.5;
+      }
+
+      button {
+        display: block;
+        color: #e5a1ab;
+        background-color: #f0fccd;
+        border-color: #e5a1ab;
+        padding: 5px 10px;
+        margin: 20px auto;
+        border-radius: 20px;
+        transition: 0.4s;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px #e2a9b2;
+        font-size: 15px;
+        border: 1px solid #e5a1ab;
+      }
+
+      button:hover {
+        background: #e5a1ab;
+        color: #f0fccd;
+      }
+      .image-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        max-width: 100%;
+        padding: 20px;
+      }
+
+      .image-row img {
+        width: 225px;
+        height: auto;
+        object-fit: cover;
+        border: 1px solid #e5a1ab;
+      }
+      .cookies {
+        display: block;
+        margin-top: 10px;
+        color: #e5a1ab;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .cookies:hover {
+        text-decoration: #e5a1ab underline wavy;
+        cursor: pointer;
+      }
+
+      h3 {
+        text-align: center;
+        color: #c0d77e;
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sugar & Whisk</h1>
+    <h2><em>Because not every bake needs a life story</em></h2>
+    <hr />
+    <p>
+      <span class="standOut">Welcome to Sugar & Whisk</span> — the place where
+      flour ends up everywhere except the bowl and we pretend that “just winging
+      it” is a legit baking method. If you’re here for flawless Instagram-worthy
+      pastries, you might want to keep scrolling. But if you’re down for recipes
+      that mostly work, a few laughs, and maybe some kitchen disasters turned
+      wins — welcome aboard. Baking doesn’t have to be perfect to be delicious.
+      Let’s get to it.
+    </p>
+    <br />
+    <button>Sign up for Sugar & Whisk newletter here</button>
+    <div class="image-row">
+      <img
+        src="https://i.pinimg.com/736x/7a/ce/ac/7aceac8175eadc086b3a7b765dad4970.jpg"
+        alt="Bakes"
+      />
+      <img
+        src="https://i.pinimg.com/736x/17/47/fe/1747feda5e4f711be066090ea8721994.jpg"
+        alt="sheep cake"
+      />
+      <img
+        src="https://images.immediate.co.uk/production/volatile/sites/30/2025/01/Best-baking-tray-b494319.jpg"
+        alt="cookies"
+      />
+    </div>
+    <a
+      href="https://zoelhernandez.com/2015/11/tanya-burrs-white-milk-chocolate-cookies/"
+      target="_blank"
+      title="Tanya Burr Cookie Recipe"
+      class="cookies"
+      >Click Here For The best Cookie Recipe Ever!</a
+    >
+    <p>
+      Let’s be honest — baking sounds wholesome and therapeutic until your dough
+      doesn’t rise, your icing melts into a puddle, and you’re questioning your
+      life choices over a tray of undercooked brownies. Welcome to the chaos.
+      This blog isn’t about perfection. You won’t find ten-step laminated
+      croissants or anything that requires tweezers. What you will find: recipes
+      that taste good, don’t require a second mortgage for ingredients, and are
+      written by someone who has definitely cried over a collapsed sponge cake
+      (it happens). This isn’t a professional kitchen. It’s a real-life,
+      flour-on-the-floor, “I forgot the eggs” type of vibe. I test every recipe
+      like a normal human: in a normal oven, with normal levels of adult
+      patience. Sometimes things flop. Sometimes things come out weirdly
+      amazing. Either way, we learn, we eat, we move on. So if you’re here to
+      bake something delicious, fail a little, succeed a lot, and laugh through
+      it — stick around. There’s cake. Probably.
+    </p>
+    <h3>Coded by Holly Charles</h3>
+    <script>
+      function signUp() {
+        let baking = prompt("Are you a Baker? Yes or No").toLowerCase().trim();
+
+        if (baking === "yes") {
+          let name = prompt("What's Your Name Sugar?");
+          let email = prompt("And Your Email?");
+
+          alert("You're all signed up, we'll be in touch soon " + name);
+        } else {
+          alert("Sign up for something you'll enjoy instead ");
+        }
+      }
+      let newletter = document.querySelector("button");
+      newletter.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
